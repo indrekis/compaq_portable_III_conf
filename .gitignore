@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Open Watcom
+*.lk1
+*.map
+*.mk
+*.mk1
