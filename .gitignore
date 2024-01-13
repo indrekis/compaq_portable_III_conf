@@ -36,3 +36,7 @@
 *.map
 *.mk
 *.mk1
+
+# TASM 
+*.obj
+*.map 
