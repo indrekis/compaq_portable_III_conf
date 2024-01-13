@@ -22,7 +22,11 @@ Currently is supported:
 
 Ability to configure other properties could be added in the future.
 
-QEMM386 and similar DOS extenders are detected -- they preclude correct operations. 
+QEMM386 and similar DOS extenders are detected -- they preclude correct operations.
+
+| ![](setmode_1.jpg) |
+|:------------------------------------------------:|
+| Example of using the configurator on Portable III (286).|
 
 ## Using MODE\.COM
 
