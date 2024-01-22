@@ -1,26 +1,26 @@
 # Compaq Portable III and Portable 386 mode change utility
 
-Compaq Portable III and Portable 386 are very similar, except the CPU used. Both can change video-adapter used: MDA or CGA, CPU speed and several other options.
+Compaq Portable III and Portable 386 are very similar, except for the CPU used. Both can change the video adapter used: MDA or CGA, CPU speed, and several other options.
 
-MODE\.COM utility provided with the Compaq DOS can change this options, but it is linked with exact DOS version. While writing an [article about those computers](), (in Ukrainian, [though more or less translatable by the Google]()), I decided to recreate some of it's functionality to check if I understand corresponding "APIs" correctly.
+MODE\.COM utility provided with the Compaq DOS can change these options, but it is linked with the exact DOS version. While writing an [article about those computers](), (in Ukrainian, [though more or less translatable by Google]()), I decided to recreate some of its functionality to check if I understood corresponding "APIs" correctly.
 
-Released under the [MIT License](LICENSE). No guaranties, as always. Could work to some extent with other similar Compaq models.
+Released under the [MIT License](LICENSE). No guarantees, as always. It could work, to some extent, with other similar Compaq models. Their support could be added in the future, though the chances are not too high.
 
 ## Usage
 
 Currently is supported:
 
-- retrieving information about the CPU speed, video-adapter usage and capabilities:
+- retrieving information about the CPU speed, video-adapter usage, and capabilities:
   - ``setmode print=CPU|video|all``
 - changing CPU speed:
   - ``setmode CPU=common|fast|high|auto|toggle|<1-50>``
-  - Numerical codes are ignored on the Portable III (286), but acknowledged on the 386.
-- changing video-adapter used:
+  - Numerical codes are ignored on the Portable III (286) but acknowledged on the 386.
+- changing video adapter used:
   - ``setmode video=CGA|MDA``
-- untested (and, because of long way debugging other features, possibly -- not working) feature -- switching to external monitor and back:
+- untested (and, because of the long way debugging other features, possibly -- not working) feature -- switching to an external monitor and back:
   - ``setmode monitor=external|internal``
 
-Ability to configure other properties could be added in the future.
+The ability to configure other properties and other computers could be added in the future.
 
 QEMM386 and similar DOS extenders are detected -- they preclude correct operations.
 
@@ -34,7 +34,7 @@ Using SETVER enables usage of the Compaq MODE\.COM from the DOS 3.31 (and other 
 
 ## Compilation
 
-Compiles using the Open Watcom 2, project files are provided. If required, I can describe building from the command-line -- feel free to fire an issue.
+Compiles using the Open Watcom 2, project files are provided. If required, I can describe the building from the command line -- feel free to fire an issue.
 
 Additional ASM utilities provided are compiled by the TASM (version 3.1 was used accidentally):
 
@@ -43,6 +43,6 @@ Additional ASM utilities provided are compiled by the TASM (version 3.1 was used
 - SetHIGH.ASM -- set speed to HIGH,
 - SetALL.ASM -- set CGA and maximal speed.
 
-Code is rather quick-and-dirty.
+Code is rather quick and dirty.
 
 All binaries are provided.
