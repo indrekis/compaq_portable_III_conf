@@ -2,7 +2,7 @@
 
 Compaq Portable III and Portable 386 are very similar, except for the CPU used. Both can change the video adapter used: MDA or CGA, CPU speed, and several other options.
 
-MODE\.COM utility provided with the Compaq DOS can change these options, but it is linked with the exact DOS version. While writing an [article about those computers](), (in Ukrainian, [though more or less translatable by Google]()), I decided to recreate some of its functionality to check if I understood corresponding "APIs" correctly.
+MODE\.COM utility provided with the Compaq DOS can change these options, but it is linked with the exact DOS version. While writing an [article about those computers](https://indrekis.github.io/retrocomputing/ibm_pc_compat/2024/01/22/Compaq_Portable_III_n_386_1.html), (in Ukrainian, [though more or less translatable by Google](https://indrekis-github-io.translate.goog/retrocomputing/ibm_pc_compat/2024/01/22/Compaq_Portable_III_n_386_1.html?_x_tr_sl=uk&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)), I decided to recreate some of its functionality to check if I understood corresponding "APIs" correctly.
 
 Released under the [MIT License](LICENSE). No guarantees, as always. It could work, to some extent, with other similar Compaq models. Their support could be added in the future, though the chances are not too high.
 
